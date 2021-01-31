@@ -1,0 +1,61 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    color: white;
+    font-size: 18px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "sidebar section1 section2 section3"
+    "sidebar main main main"
+    "footer footer footer footer";
+    height: 98vh;
+}
+
+.header {
+    background: rgb(0, 143, 142);
+    grid-area: header;
+    padding: 15px;
+}
+
+.sidebar {
+    background: rgb(169, 169, 169);
+    grid-area: sidebar;
+    padding: 15px;
+}
+
+.section1 {
+    background: rgb(129, 214, 45);
+    grid-area: section1;
+    padding: 15px;
+}
+
+.section2 {
+    background: rgb(129, 214, 45);
+    grid-area: section2;
+    padding: 15px;
+}
+
+.section3 {
+    background: rgb(129, 214, 45);
+    grid-area: section3;
+    padding: 15px;
+}
+
+.main {
+    background: rgb(255, 76, 42);
+    grid-area: main;
+    padding: 15px;
+}
+
+.footer {
+    background: rgb(0, 143, 142);
+    grid-area: footer;
+    padding: 15px;
+}
+
+
